@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<head>
+<title>mytest</title>
+</head>
+<body>
+<
+
+<table>
+<thead>
+<th>firstname</th>
+<th> lastname </th>
+<th> Email </th>
+<th> Phone </th>
+</thead>
+<tbody>
+
+<tr>
+{% for k in x %}
+<td> {{k.fname}}</td>
+<td> {{k.lname}}</td>
+<td> {{k.email}}</td>
+<td> {{k.phone_number}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+
+
+</body>
+</html>
